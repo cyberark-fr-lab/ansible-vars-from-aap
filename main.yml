@@ -1,0 +1,7 @@
+---
+
+- name: Test successful lookup from aap extra-vars
+  hosts: localhost
+  tasks:
+    - debug:
+        msg: "Extra var from AAP: {{ var_from_extra_vars }}"
